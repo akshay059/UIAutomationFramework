@@ -26,7 +26,6 @@ public class CommonPageElements {
 	private WebElement logoutButton;
 
 	public void clickLogoutButton() {
-		log.info(driver.getPageSource());
 		logoutButton.click();
 	}
 
