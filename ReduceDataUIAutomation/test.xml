@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="sanity" verbose="1" thread-count="2" parallel="tests">
-  <test name="LoginTest" >
-  <parameter name="browser" value="chrome"></parameter>
+  <test name="LoginTest_p" >
+  <parameter name="browser" value="phantom"></parameter>
     <packages>
        <package name="com.rd.test" />
     </packages>
   </test>
   <test name="LoginTest_f" >
   <parameter name="browser" value="firefox"></parameter>
+    <packages>
+       <package name="com.rd.test" />
+    </packages>
+  </test>
+  <test name="LoginTest_c" >
+  <parameter name="browser" value="chrome"></parameter>
     <packages>
        <package name="com.rd.test" />
     </packages>

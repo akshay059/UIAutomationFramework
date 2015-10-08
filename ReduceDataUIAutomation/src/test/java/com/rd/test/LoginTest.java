@@ -1,5 +1,8 @@
 package com.rd.test;
 
+import java.net.MalformedURLException;
+
+import org.apache.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -9,10 +12,11 @@ import com.rd.pages.CommonPageElements;
 import com.rd.pages.Login;
 
 public class LoginTest extends BaseTest {
+	Logger log = Logger.getLogger(this.getClass());
 	
 	@BeforeTest
 	@Parameters("browser")
-	public void before(String browser) {
+	public void before(String browser) throws MalformedURLException {
 		setDriver(browser);
 		// TODO Auto-generated constructor stub
 	}

@@ -65,7 +65,6 @@ public class Login {
 	}
 
 	public void login(String email, String password) {
-
 		setEmail(email);
 		setPassword(password);
 		submit();
